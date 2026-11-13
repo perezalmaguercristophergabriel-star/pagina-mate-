@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temas Selectos de Matemáticas II - 5AMP</title>
+    <link rel="icon" href="https://www.CBTIS83.edu.mx/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos_tabala.css">
+</head>
+<body>
+    <header>
+        <h1>Temas Selectos de Matemáticas II</h1>
+        <p>Docente: Prof. José Epifanio Mera Azpeitia | Grupo 5AMP - CBTIS 83</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Materia1.html" class="active">Temas Selectos II</a></li>
+            <li><a href="materia2.html">Pensamiento Matemático</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Introducción a la materia -->
+        <section>
+            <h2>Introducción a la Geometría Analítica</h2>
+            <p>La <strong>Geometría Analítica</strong> une el álgebra y la geometría mediante el plano cartesiano. Su principio fundamental establece que a cada punto del plano le corresponde un par ordenado de números reales (<em>x</em>, <em>y</em>), y que toda figura geométrica (rectas y secciones cónicas) puede representarse mediante una ecuación algebraica.</p>
+
+            <div class="grid-container">
+                <article class="card">
+                    <h3>Conceptos Base del Plano</h3>
+                    <ul class="styled-list">
+                        <li><strong>Segmento Dirigido:</strong> Porción de recta con magnitud, dirección y sentido definidos (AB = x₂ - x₁).</li>
+                        <li><strong>Punto Medio P<sub>m</sub>(x<sub>m</sub>, y<sub>m</sub>):</strong> Divide un segmento en dos partes iguales: <br><span class="formula-badge">xₘ = (x₁ + x₂)/2 , yₘ = (y₁ + y₂)/2</span></li>
+                        <li><strong>Inclinación y Pendiente (<em>m</em>):</strong> Relacionada con la trigonometría mediante la tangente del ángulo que forma la recta con el eje horizontal.</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Criterios de Paralelismo y Perpendicularidad</h3>
+                    <ul class="styled-list">
+                        <li><strong>Rectas Paralelas (L₁ ∥ L₂):</strong> Nunca se cruzan y conservan la misma pendiente: <br><span class="formula-badge">m₁ = m₂</span></li>
+                        <li><strong>Rectas Perpendiculares (L₁ ⊥ L₂):</strong> Se cortan formando ángulos rectos (90°) y sus pendientes son inversas con signo contrario: <br><span class="formula-badge">m₁ · m₂ = -1</span></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Tabla detallada de los 9 bloques -->
+        <section>
+            <h2>Temario Desarrollado y Formulario Analítico Completo</h2>
+            <p>Desglose completo de los 9 bloques temáticos abordados durante el semestre con sus ecuaciones y aplicaciones:</p>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bloque / Tema</th>
+                            <th>Desarrollo Teórico y Casos</th>
+                            <th>Fórmulas y Ecuaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Distancia entre Puntos</strong></td>
+                            <td>Permite determinar la magnitud exacta de un segmento en el plano cartesiano entre P₁(x₁, y₁) y P₂(x₂, y₂), deducido del Teorema de Pitágoras.</td>
+                            <td><code>d = √[(x₂ - x₁)² + (y₂ - y₁)²]</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Distancia de un Punto a una Recta</strong></td>
+                            <td>Calcula la longitud del segmento perpendicular más corto desde un punto exterior P(x₁, y₁) hasta una recta general.</td>
+                            <td><code>d = |Ax₁ + By₁ + C| / √(A² + B²)</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Ecuaciones de la Recta</strong></td>
+                            <td>Formas algebraicas según los datos conocidos: Punto-Pendiente, Pendiente-Ordenada, Simétrica y General.</td>
+                            <td>• <code>y - y₁ = m(x - x₁)</code><br>• <code>y = mx + b</code><br>• <code>(x / a) + (y / b) = 1</code><br>• <code>Ax + By + C = 0</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>4. Recta que pasa por Dos Puntos</strong></td>
+                            <td>Cálculo de la pendiente a partir de dos coordenadas y sustitución posterior en la ecuación de la recta.</td>
+                            <td><code>m = (y₂ - y₁) / (x₂ - x₁)</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>5. Circunferencia</strong></td>
+                            <td>Lugar geométrico de puntos que equidistan de un centro C(h, k) con radio constante <em>r</em>.</td>
+                            <td><code>(x - h)² + (y - k)² = r²</code><br><code>x² + y² + Dx + Ey + F = 0</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>6. Parábola</strong></td>
+                            <td>Curva cónica definida por la distancia equidistante a un Foco y una Directriz, con parámetro <em>p</em> y lado recto LR = |4p|.</td>
+                            <td><em>Horizontal:</em> <code>(y - k)² = 4p(x - h)</code><br><em>Vertical:</em> <code>(x - h)² = 4p(y - k)</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>7. La Elipse</strong></td>
+                            <td>Lugar geométrico de los puntos cuya suma de distancias a dos puntos fijos (Focos) es constante (2a). Cumple la relación pitagórica a² = b² + c².</td>
+                            <td><em>Horizontal:</em> <code>(x - h)²/a² + (y - k)²/b² = 1</code><br><em>Vertical:</em> <code>(x - h)²/b² + (y - k)²/a² = 1</code><br><em>Excentricidad:</em> <code>e = c / a</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>8. La Hipérbola</strong></td>
+                            <td>Lugar geométrico de los puntos cuya diferencia de distancias a dos focos es constante (2a). Posee dos ramas abiertas y rectas guía llamadas <strong>asíntotas</strong>. Cumple c² = a² + b².</td>
+                            <td><em>Horizontal:</em> <code>(x - h)²/a² - (y - k)²/b² = 1</code><br><em>Vertical:</em> <code>(y - k)²/a² - (x - h)²/b² = 1</code><br><em>Asíntotas:</em> <code>y = ±(b / a)x</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>9. Ecuación General de Segundo Grado</strong></td>
+                            <td>Permite identificar cualquier sección cónica mediante el análisis del indicador o discriminante <strong>I = B² - 4AC</strong> sin necesidad de graficarla previamente.</td>
+                            <td><code>Ax² + Bxy + Cy² + Dx + Ey + F = 0</code><br><br>• Si B² - 4AC &lt; 0: <strong>Elipse / Circunferencia</strong><br>• Si B² - 4AC = 0: <strong>Parábola</strong><br>• Si B² - 4AC &gt; 0: <strong>Hipérbola</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Ejemplos prácticos -->
+        <section>
+            <h2>Ejercicios Tipo Resueltos Paso a Paso</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <h3>Ejemplo A: Ecuación de la Recta</h3>
+                    <p><strong>Problema:</strong> Encuentra la ecuación general de la recta que pasa por A(2, -3) y tiene pendiente m = 4.</p>
+                    <ol class="styled-list">
+                        <li>Usar forma punto-pendiente: y - (-3) = 4(x - 2)</li>
+                        <li>Simplificar signos y multiplicar: y + 3 = 4x - 8</li>
+                        <li><strong>Resultado:</strong> <span class="formula-badge">4x - y - 11 = 0</span></li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Ejemplo B: Elementos de una Elipse</h3>
+                    <p><strong>Problema:</strong> Dada la elipse (x² / 25) + (y² / 9) = 1, halla sus semiejes y distancia focal.</p>
+                    <ol class="styled-list">
+                        <li>Identificar denominadores: a² = 25 → a = 5; b² = 9 → b = 3</li>
+                        <li>Calcular distancia focal (<em>c</em>): c = √(25 - 9) = √16 = 4</li>
+                        <li><strong>Resultado:</strong> <span class="formula-badge">Vértices (±5, 0) | Focos (±4, 0)</span></li>
+                    </ol>
+                </article>
+
+                <article class="card">
+                    <h3>Ejemplo C: Identificación de Cónica</h3>
+                    <p><strong>Problema:</strong> Determina qué cónica representa 4x² + 9y² - 36 = 0.</p>
+                    <ol class="styled-list">
+                        <li>Identificar coeficientes: A = 4, B = 0, C = 9</li>
+                        <li>Evaluar discriminante: B² - 4AC = 0² - 4(4)(9) = -144</li>
+                        <li>Como es menor que 0 y A ≠ C: <span class="formula-badge">Es una Elipse</span></li>
+                    </ol>
+                </article>
+            </div>
+        </section>
+
+        <!-- Herramienta interactiva 1: Ecuación de la recta -->
+        <section>
+            <h2>Generador Interactivo 1: Ecuación de la Recta</h2>
+            <p>Introduce dos coordenadas para obtener su pendiente y su ecuación pendiente-ordenada:</p>
+
+            <form id="formRecta">
+                <div class="grid-container">
+                    <div class="form-group">
+                        <label for="rx1">Punto 1 (X₁):</label>
+                        <input type="number" step="any" id="rx1" placeholder="Ej. 2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ry1">Punto 1 (Y₁):</label>
+                        <input type="number" step="any" id="ry1" placeholder="Ej. 3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rx2">Punto 2 (X₂):</label>
+                        <input type="number" step="any" id="rx2" placeholder="Ej. 4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ry2">Punto 2 (Y₂):</label>
+                        <input type="number" step="any" id="ry2" placeholder="Ej. 7" required>
+                    </div>
+                </div>
+                <button type="submit">Obtener Ecuación de la Recta</button>
+            </form>
+
+            <div id="alertaRecta" class="alerta-mensaje" role="alert"></div>
+        </section>
+
+        <!-- Herramienta interactiva 2: Identificador de Cónicas -->
+        <section>
+            <h2>Generador Interactivo 2: Identificador de Secciones Cónicas</h2>
+            <p>Ingresa los coeficientes <strong>A</strong>, <strong>B</strong> y <strong>C</strong> de la ecuación general <code>Ax² + Bxy + Cy² + Dx + Ey + F = 0</code> para determinar automáticamente qué cónica representa:</p>
+
+            <form id="formConica">
+                <div class="grid-container">
+                    <div class="form-group">
+                        <label for="coefA">Coeficiente A (de x²):</label>
+                        <input type="number" step="any" id="coefA" placeholder="Ej. 4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="coefB">Coeficiente B (de xy):</label>
+                        <input type="number" step="any" id="coefB" value="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="coefC">Coeficiente C (de y²):</label>
+                        <input type="number" step="any" id="coefC" placeholder="Ej. 9" required>
+                    </div>
+                </div>
+                <button type="submit">Identificar Cónica</button>
+            </form>
+
+            <div id="alertaConica" class="alerta-mensaje" role="alert"></div>
+        </section>
+
+        <!-- Guía Visual con tu Imagen -->
+        <section>
+            <h2>Guía Visual Paso a Paso</h2>
+            <p>Infografía resumen con ejercicios resueltos de Geometría Analítica:</p>
+            <div class="media-container">
+                <img src="Gemini_Generated_Image_8ij6mu8ij6mu8ij6 (1).jpg" alt="Guía Paso a Paso Temas Selectos II" class="guia-img">
+            </div>
+        </section>
+
+        <!-- Video de Apoyo (Actualizado con enlace sugerido) -->
+        <section>
+            <h2>Video Tutorial: Ecuaciones y Secciones Cónicas</h2>
+            <p>Refuerza los procedimientos analíticos y aprende a identificar gráficamente cada cónica:</p>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/8_dhO8AroT0" title="Cómo identificar Cónicas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CBTIS No. 083 | Temas Selectos de Matemáticas II - Grupo 5AMP</p>
+    </footer>
+
+    <script>
+        document.getElementById('formRecta').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const x1 = parseFloat(document.getElementById('rx1').value);
+            const y1 = parseFloat(document.getElementById('ry1').value);
+            const x2 = parseFloat(document.getElementById('rx2').value);
+            const y2 = parseFloat(document.getElementById('ry2').value);
+            const alerta = document.getElementById('alertaRecta');
+
+            if (x1 === x2 && y1 === y2) {
+                alerta.innerHTML = "Los dos puntos son idénticos. Ingresa dos coordenadas diferentes.";
+                alerta.style.display = 'block';
+                return;
+            }
+
+            if (x2 - x1 === 0) {
+                alerta.innerHTML = `<strong>Recta Vertical detectada:</strong><br>• Pendiente (m): Indefinida<br>• Ecuación de la recta: <strong>x = ${x1}</strong>`;
+                alerta.style.display = 'block';
+                return;
+            }
+
+            const m = (y2 - y1) / (x2 - x1);
+            const b = y1 - (m * x1);
+            const signoB = b >= 0 ? `+ ${b.toFixed(2)}` : `- ${Math.abs(b).toFixed(2)}`;
+
+            alerta.innerHTML = `<strong>Análisis de la recta entre P₁(${x1}, ${y1}) y P₂(${x2}, ${y2}):</strong><br>
+                                • Pendiente (m) = <strong>${m.toFixed(2)}</strong><br>
+                                • Ordenada al origen (b) = <strong>${b.toFixed(2)}</strong><br>
+                                • Ecuación ordinaria: <strong>y = ${m.toFixed(2)}x ${signoB}</strong>`;
+            alerta.style.display = 'block';
+        });
+
+        document.getElementById('formConica').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const A = parseFloat(document.getElementById('coefA').value);
+            const B = parseFloat(document.getElementById('coefB').value);
+            const C = parseFloat(document.getElementById('coefC').value);
+            const alerta = document.getElementById('alertaConica');
+
+            const discriminante = (B * B) - (4 * A * C);
+            let tipoConica = "";
+
+            if (A === 0 && C === 0 && B === 0) {
+                tipoConica = "Línea Recta (no es una ecuación cuadrática).";
+            } else if (discriminante < 0) {
+                if (A === C && B === 0) {
+                    tipoConica = "Circunferencia (discriminante negativo con A = C).";
+                } else {
+                    tipoConica = "Elipse (discriminante negativo con A ≠ C).";
+                }
+            } else if (discriminante === 0) {
+                tipoConica = "Parábola (discriminante igual a cero).";
+            } else {
+                tipoConica = "Hipérbola (discriminante mayor que cero).";
+            }
+
+            alerta.innerHTML = `<strong>Resultado del Discriminante (I = B² - 4AC):</strong><br>
+                                • Valor calculado: <strong>${discriminante}</strong><br>
+                                • Sección Cónica identificada: <strong>${tipoConica}</strong>`;
+            alerta.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
